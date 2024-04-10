@@ -1,0 +1,16 @@
+Feature: Sección "Planes de suscripción"
+
+  Scenario: Visualizar plan de suscripción básico
+    Given el visitante se encuentra en la sección "Planes de suscripción"
+    When haga click en la opción "Plan básico"
+    Then se desplegará la información detallada del plan de suscripción básico.
+
+  Scenario: Visualizar plan de suscripción regular
+    Given el visitante se encuentra en la sección "Planes de suscripción"
+    When haga click en la opción "Plan regular"
+    Then se desplegará la información detallada del plan de suscripción regular.
+
+  Scenario: Visualizar plan de suscripción premium
+    Given el visitante se encuentra en la sección "Planes de suscripción"
+    When haga click en la opción "Plan premium"
+    Then se desplegará la información detallada del plan de suscripción premium.
