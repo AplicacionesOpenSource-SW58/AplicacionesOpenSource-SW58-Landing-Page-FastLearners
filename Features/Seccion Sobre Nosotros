@@ -1,6 +1,0 @@
-Feature: Sección "Sobre Nosotros"
-
-  Scenario: Visualizar información del equipo de FastLearners
-    Given el visitante se encuentra en la landing page de FastLearners
-    When haga click en la sección "Sobre Nosotros"
-    Then se mostrará información detallada sobre los integrantes del equipo de FastLearners.

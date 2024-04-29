@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=”descripcion” content= "FastLearners es una aplicación web que te permitirá aprender más sobre el mundo del desarrollo de software con expertos en el campo ¡Regístrate ya!"/>
     <meta name= “autor” content=“FastLearners”>
@@ -19,18 +19,39 @@
     <header class="header">
         <nav class="header__left">
             <img id="slash" class="header__img" src="./assets/icons/Menu.svg" alt="imagen del icono del menu">
-            <img class="header__img" src="./assets/icons/LogoRecortado 2.svg" alt="imagen del logo miniatura">
+            <img id="home" class="header__img" src="./assets/icons/LogoRecortado 2.svg" alt="imagen del logo miniatura">
+            <ul class="header__sections">
+                <li class="header__section slash__knowmore">Conoce mas</li>
+                <li class="header__section slash__plans">Planes de suscripcion</li>
+                <li class="header__section slash__aboutus">Acerca de nosotros</li>
+            </ul>
         </nav>
         <img class="header__img" src="./assets/icons/User.svg" alt="imagen del usuario">
+        <div class="header__login-out">
+            <button class="header__in header__button">Iniciar sesion</button>
+            <button class="header__out header__button">Crear cuenta</button>
+        </div>
     </header>
     <main class="main">
         <section  class="mainPage">
-            <img  class="mainPage__logo" src="./assets/icons/LogoRecortado 2.svg" alt="imagen del logo banner">
-            <h1 class="mainPage__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, laudantium!</h1>
-            <p  class="mainPage__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laboriosam quisquam ex quidem, fugiat voluptatem, autem iusto eius nesciunt pariatur ipsam quam quod praesentium voluptas deserunt. Nobis, rem dignissimos.
-            Repellat, veritatis numquam ab quod corporis id nesciunt quis officia commodi, est non ullam vel accusamus explicabo velit placeat blanditiis cum perferendis laudantium repudiandae? Excepturi deserunt cumque optio deleniti quidem?</p>
-            <button  class="mainPage__conoce-mas mainPage__button">Conoce mas</button>
-            <button class="mainPage__subscribite mainPage__button">!Suscríbete ya!</button>
+            <div class="mainPage__info">
+                <img  class="mainPage__logo" src="./assets/icons/LogoRecortado 2.svg" alt="imagen del logo banner">
+                <h1 class="mainPage__title">Aprende a programar junto a expertos, un paso a la vez</h1>
+                <p  class="mainPage__text">
+                    <span>FastLearners te ayudará a mejorar tus habilidades como desarrollador con la ayuda de expertos en el área y de estudiantes que también están aprendiendo contigo. </span>
+                    <span>Ve videos, lee documentación, busca repositorios o discute y colabora con otros. Tienes todo el control de cómo quieres aprender, en cualquier momento y desde cualquier lugar. </span>
+                </p>
+                <div class="mainPage__buttons">
+                    <button  class="mainPage__conoce-mas mainPage__button">Conoce mas</button>
+                    <button class="mainPage__subscribite mainPage__button">!Suscríbete ya!</button>
+                </div>
+            </div>
+            <div class="mainPage__images">
+                <img class="mainPage__img mainPage__img1" src="./assets/imgs/image1.png" alt="imagen de...">
+                <img class="mainPage__img mainPage__img2" src="./assets/imgs/image2.png" alt="imagen de...">
+                <img class="mainPage__img mainPage__img3" src="./assets/imgs/image3.png" alt="imagen de...">
+                <img class="mainPage__img mainPage__img4" src="./assets/imgs/image4.png" alt="imagen de...">
+            </div>
         </section>
         <section class="slash  hidden">
             <ul class="slash__opcions">
@@ -54,11 +75,11 @@
                 <article class="aboutUs__member">
                     <img class="aboutUs__img" src="./assets/imgs/mathias.svg" alt="imagen de perfil">
                     <h3>Mathias Javier</h3>
-                    <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, SQL, React, Python, Javascript. </p>
+                    <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, Python, SQL, Azure. Trabajador y Amigable </p>
                 </article>
                 <article class="aboutUs__member">
                     <img class="aboutUs__img" src="./assets/imgs/carlos.svg" alt="imagen de perfil">
-                    <h3>Carlos</h3>
+                    <h3>Carlos Ochoa</h3>
                     <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, SQL, Python. Creativo y amigable. </p>
                 </article>
                 <article class="aboutUs__member">
@@ -67,7 +88,7 @@
                     <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, React, Laravel,HTML5, CSS3, Javascript, SQL, Docker. </p>
                 </article>
                 <article class="aboutUs__member">
-                    <img class="aboutUs__img" src="./assets/imgs/marco.svg" alt="imagen de perfil">
+                    <img class="aboutUs__img" src="./assets/imgs/MarcoMendez.png" alt="imagen de perfil">
                     <h3>Marco Mendez</h3>
                     <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, SQL, Python. Persistente y amigable. </p>
                 </article>
