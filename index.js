@@ -9,6 +9,8 @@ const sectionMainPage = document.querySelector("section.mainPage");
 const sectionAboutUs = document.querySelector("section.aboutUs");
 const sectionConoceMas = document.querySelector("section.conoce-mas");
 const sectionPlanes = document.querySelector("section.planesSubcripcion");
+const conoceMas = document.querySelector("#conoce-mas-landing");
+const  subcripcionLanding= document.querySelector("#subcripcion-landing");
 
 const slashOpcions = document.querySelector(".slash__opcions");
 
@@ -19,7 +21,9 @@ const headerOpcions = document.querySelector(".header__sections");
 slash.addEventListener('click', openSlash);
 headerOpcions.addEventListener('click', openSection);
 slashOpcions.addEventListener('click', openSection);
+sectionMainPage.addEventListener('click', openSection);
 logoHome.addEventListener('click', home);
+
 
 // FUNCIONES
 function openSlash(){
@@ -39,16 +43,17 @@ function home(){
 
 function openSection(e){
     const isLi  = e.target.nodeName =  'LI';
+    console.log(e.target.id);
     if (isLi) {
         hideAllSections();
     };
     if (e.target.classList.contains("slash__aboutus") && isLi) {
         sectionAboutUs.classList.remove("hidden");
     }
-    if (e.target.classList.contains("slash__knowmore") && isLi) {
+    if ((e.target.classList.contains("slash__knowmore") && isLi)|| e.target.id=="conoce-mas-landing") {
         sectionConoceMas.classList.remove("hidden");
     }
-    if (e.target.classList.contains("slash__plans") && isLi) {
+    if ((e.target.classList.contains("slash__plans") && isLi ) || e.target.id=="subcripcion-landing"){
         sectionPlanes.classList.remove("hidden");
     }
 }
