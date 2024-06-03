@@ -23,6 +23,7 @@
 html {
     font-size: 62.5%; /*1rem = 10px*/
     font-family: "Andada Pro", serif;
+    overflow-x: hidden;
 }
 
 body{
@@ -31,6 +32,8 @@ body{
     height: 100%;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
+
 }
 /* HIDDEN  ELEMENTS ---------------------------- */
 .hidden  {
@@ -41,6 +44,7 @@ body{
 /*  HEADER ------------------------------- */
 .header{
     width: 100%;
+    max-width: 100%; 
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -97,6 +101,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0 3.5rem;
+
 }
 
 /* SECTION MAIN PAGE --------------------------------*/
@@ -282,7 +287,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    gap: 2.7rem;
+    gap: 5.7rem;
 }
 .conoce-mas__card {
     display: flex;
@@ -384,6 +389,7 @@ body{
     width: 100%;
     padding: 1.5rem 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     color: var(--secondary-text);
     background-color: var(--background-footer);
@@ -481,4 +487,9 @@ body{
     .conoce-mas__info > p{
         align-self: start;
     }
+    /* FOOTER */
+    .footer{
+        flex-direction: row;
+    }
+
 }
